@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ab3005ed82f74ea126ec8761a1c27cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ab3005ed82f74ea126ec8761a1c27cb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ab3005ed82f74ea126ec8761a1c27cb = L.map(
+                "map_2ab3005ed82f74ea126ec8761a1c27cb",
+                {
+                    center: [27.959200000000003, 84.64699999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de64d3994347c889e92b46042a2ed8eb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_de64d3994347c889e92b46042a2ed8eb.addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var poly_line_abbc5e37d2e3a2ff271fe6b6f6780eab = L.polyline(
+                [[27.6733, 85.289], [28.2451, 84.005]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var marker_62336c2333c32586a8397ba718a069d1 = L.marker(
+                [27.6733, 85.289],
+                {
+}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var icon_cd526977a61804695fc88414ebccfb30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b93f5549a538ec488c76b496ebbbf08c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a245d7a616e9a866d1935e0a5301f7c = $(`<div id="html_7a245d7a616e9a866d1935e0a5301f7c" style="width: 100.0%; height: 100.0%;">A*: Kirtipur, Kathmandu</div>`)[0];
+                popup_b93f5549a538ec488c76b496ebbbf08c.setContent(html_7a245d7a616e9a866d1935e0a5301f7c);
+            
+        
+
+        marker_62336c2333c32586a8397ba718a069d1.bindPopup(popup_b93f5549a538ec488c76b496ebbbf08c)
+        ;
+
+        
+    
+    
+                marker_62336c2333c32586a8397ba718a069d1.setIcon(icon_cd526977a61804695fc88414ebccfb30);
+            
+    
+            var marker_0644474c541f03fa1c95da34615f12db = L.marker(
+                [28.2451, 84.005],
+                {
+}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var icon_3663a7a5302d1245d2b7afe34d99d7fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c0982c44843d510e74c7e5837c87a13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd8948b0911fa053a1f4af17a43b296f = $(`<div id="html_dd8948b0911fa053a1f4af17a43b296f" style="width: 100.0%; height: 100.0%;">A*: Hemja, Pokhara</div>`)[0];
+                popup_6c0982c44843d510e74c7e5837c87a13.setContent(html_dd8948b0911fa053a1f4af17a43b296f);
+            
+        
+
+        marker_0644474c541f03fa1c95da34615f12db.bindPopup(popup_6c0982c44843d510e74c7e5837c87a13)
+        ;
+
+        
+    
+    
+                marker_0644474c541f03fa1c95da34615f12db.setIcon(icon_3663a7a5302d1245d2b7afe34d99d7fe);
+            
+    
+            var poly_line_72738ff2c7504c919fead2760f57dd1f = L.polyline(
+                [[27.6733, 85.289], [28.2451, 84.005]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var marker_4ef43d85d944f5e51a6c026bf9f313f9 = L.marker(
+                [27.6733, 85.289],
+                {
+}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var icon_d70d93b3e615c78e2977ced8657f3e33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edd9683ce6ef0ad6ae420eca70287d90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9160d778e48ec478e0c2110ff88b9303 = $(`<div id="html_9160d778e48ec478e0c2110ff88b9303" style="width: 100.0%; height: 100.0%;">Greedy: Kirtipur, Kathmandu</div>`)[0];
+                popup_edd9683ce6ef0ad6ae420eca70287d90.setContent(html_9160d778e48ec478e0c2110ff88b9303);
+            
+        
+
+        marker_4ef43d85d944f5e51a6c026bf9f313f9.bindPopup(popup_edd9683ce6ef0ad6ae420eca70287d90)
+        ;
+
+        
+    
+    
+                marker_4ef43d85d944f5e51a6c026bf9f313f9.setIcon(icon_d70d93b3e615c78e2977ced8657f3e33);
+            
+    
+            var marker_e3b10e53a3dff67194e48da0d32528ac = L.marker(
+                [28.2451, 84.005],
+                {
+}
+            ).addTo(map_2ab3005ed82f74ea126ec8761a1c27cb);
+        
+    
+            var icon_83591c7488f46b723212dab94b927ecd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_586400908eef106dce881940fc932c0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e701a579e9c9f69621bc6d29ba0fdfc = $(`<div id="html_0e701a579e9c9f69621bc6d29ba0fdfc" style="width: 100.0%; height: 100.0%;">Greedy: Hemja, Pokhara</div>`)[0];
+                popup_586400908eef106dce881940fc932c0e.setContent(html_0e701a579e9c9f69621bc6d29ba0fdfc);
+            
+        
+
+        marker_e3b10e53a3dff67194e48da0d32528ac.bindPopup(popup_586400908eef106dce881940fc932c0e)
+        ;
+
+        
+    
+    
+                marker_e3b10e53a3dff67194e48da0d32528ac.setIcon(icon_83591c7488f46b723212dab94b927ecd);
+            
+</script>
+</html>
