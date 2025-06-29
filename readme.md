@@ -1,95 +1,24 @@
-# Pathfinding Graph Project - Nepal Locations
+# Pathfinding in Nepal using A* and Greedy Search
 
-This project demonstrates the use of **A\*** and **Greedy Best-First Search** algorithms to find optimal paths between major landmarks in two Nepali regions: **Kathmandu** and **Pokhara**.
+This project implements two graph search algorithms — **A\* Search** and **Greedy Best-First Search** — to find the most optimal route between cities in Nepal.
 
-It uses:
+### ✅ What it does:
+- Uses real-world city coordinates (from `coordinates.json`)
+- Defines road connections manually in `adjacency.json`
+- Calculates edge weights using the **Haversine distance**
+- Builds a weighted graph based on adjacency
+- Runs **A\*** and **Greedy** to find paths from **Biratnagar** to **Pokhara**
+- Compares path length and cost between the two algorithms
+- Visualizes the resulting paths on a map using **Folium**
 
-- Geographical coordinates of 20 locations (10 from each region)
-- Haversine distance as a heuristic
-- Complete graph generation
-- Visualizations of both pathfinding results and the full graph structure using `folium`
-
----
-
-## 📁 Project Structure
-
-```
-project_root/
-│
-├── data/
-│   └── coordinates.json              # Location coordinates
-│
-├── output/
-│   ├── a_star_path.html             # A* path visualization
-│   ├── graph.json                   # Full graph structure (distances)
-│   └── graph_visualization.html     # Full graph visual map
-│
-├── pathfinder.py                    # Builds graph, runs A*, Greedy, saves results
-├── graph_visualizer.py              # Visualizes all nodes and edges
-├── run_all.py                       # Runs pathfinder and visualizer sequentially
-└── README.md                        # Project documentation
-```
+### 📌 Notes:
+- This is the **working version**. Previous implementations did not handle data correctly and produced inaccurate outputs.
+- The A\* implementation guarantees the shortest path, while Greedy may be faster but not always optimal.
 
 ---
 
-## 📌 Requirements
-
-Install required Python packages:
-
-```bash
-pip install folium
-```
-
----
-
-## 🚀 How to Run the Project
-
-From the root folder, run:
-
-```bash
-python run_all.py
-```
-
-This will:
-
-1. Build the graph and compute paths using A\* and Greedy (via `pathfinder.py`)
-2. Visualize the full graph structure (via `graph_visualizer.py`)
-3. Save all outputs inside the `output/` folder
-
----
-
-## 🌍 Data Sources
-
-- Coordinates were manually collected using public map data (Google Maps and OpenStreetMap).
-
----
-
-## 📈 Algorithms Used
-
-Start: *Kirtipur, Kathmandu* — Goal: *Hemja, Pokhara*
-
-- **Greedy Best-First Search**: Explores nodes based only on heuristic (Haversine to goal).
-- **A\***: Explores based on actual cost so far + heuristic to goal.
-
-Both algorithms use a complete graph of all locations.
-
----
-
-## 📎 Notes
-
-- Haversine distance is in meters.
-- Graph is stored in `output/graph.json` and visualized with `folium` in HTML.
-- Supports easy customization of start and goal nodes in `pathfinder.py`
-
----
-
-## 🛠 Future Improvements
-
-- Add OpenStreetMap support to avoid Google API limits
-- Allow interactive selection of nodes
-- Color-code Kathmandu vs Pokhara nodes
-
----
-
-Created by: **Soujanya Subedi**
-
+### 📂 Files
+- `coordinates.json` – city coordinates (lat, lon)
+- `adjacency.json` – valid road connections between cities
+- `pathfinder.py` – main program
+- `astar_path_map.html` – interactive

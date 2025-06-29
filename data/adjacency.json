@@ -1,0 +1,22 @@
+{
+    "Pokhara": ["Syangja", "Mugling"],
+    "Syangja": ["Palpa", "Pokhara"],
+    "Palpa": ["Syangja", "Butwal"],
+    "Butwal": ["Palpa", "Nawalparasi"],
+    "Nawalparasi": ["Butwal", "Bharatpur"],
+    "Bharatpur": ["Nawalparasi", "Mugling", "Hetauda"],
+    "Mugling": ["Bharatpur", "Pokhara", "Kathmandu"],
+    "Hetauda": ["Bharatpur", "Kathmandu", "Janakpur"],
+    "Kathmandu": ["Mugling", "Hetauda", "Dhulikhel"],
+    "Dhulikhel": ["Kathmandu", "Sindhuli"],
+    "Sindhuli": ["Dhulikhel", "Bardibas"],
+    "Bardibas": ["Sindhuli", "Janakpur", "Lahan"],
+    "Janakpur": ["Bardibas", "Hetauda", "Lahan"],
+    "Lahan": ["Janakpur", "Gaighat", "Bardibas"],
+    "Gaighat": ["Lahan", "Inaruwa"],
+    "Inaruwa": ["Gaighat", "Itahari"],
+    "Itahari": ["Inaruwa", "Dharan", "Biratnagar"],
+    "Dharan": ["Itahari", "Biratnagar"],
+    "Biratnagar": ["Dharan", "Itahari", "Rangeli"],
+    "Rangeli": ["Biratnagar"]
+}
